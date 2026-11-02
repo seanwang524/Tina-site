@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>朵朵的小小世界 · 我的个人主页</title>
+<meta name="description" content="我是朵朵，北京的一名四年级小学生。这里有我的画、我的琴声、我读过的书，和一点点长大的故事。" />
+<meta name="theme-color" content="#fff8f0" />
+<meta property="og:title" content="朵朵的小小世界" />
+<meta property="og:description" content="一个四年级小学生的小小世界：画画、钢琴、读书，和慢慢长大的故事。" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- 顶部导航 -->
+<header class="topbar" id="top">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>朵朵的小小世界</span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#about">关于我</a>
+      <a href="#hobbies">我的爱好</a>
+      <a href="#works">作品</a>
+      <a href="#journey">成长足迹</a>
+      <a href="#wish">愿望清单</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------- 首页 ---------- -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="blob blob-a" aria-hidden="true"></div>
+    <div class="blob blob-b" aria-hidden="true"></div>
+    <div class="blob blob-c" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="ping" aria-hidden="true"></span>北京 · 小学四年级</p>
+        <h1 id="hero-title">
+          你好，我是
+          <span class="name">朵朵</span>
+          <span class="wave" aria-hidden="true">👋</span>
+        </h1>
+        <p class="lede">
+          喜欢画画、弹钢琴，也喜欢一切毛茸茸的小动物。
+          这里是我自己的小小世界——放着我画的画、弹过的曲子，
+          还有我一点点长大的样子。欢迎随便逛逛。
+        </p>
+
+        <div class="chips" role="list">
+          <span class="chip" role="listitem">10 岁</span>
+          <span class="chip" role="listitem">四年级</span>
+          <span class="chip" role="listitem">爱画画</span>
+          <span class="chip" role="listitem">会弹琴</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">看看我的作品</a>
+          <a class="btn btn-ghost" href="#about">先认识我</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="photo-frame">
+          <!-- 把这张照片换成你自己的：images/me.jpg -->
+          <img src="images/me.jpg" alt="朵朵的照片" onerror="this.classList.add('img-missing')" />
+          <div class="photo-fallback" aria-hidden="true">
+            <span class="fallback-face">🙂</span>
+            <span class="fallback-hint">把照片放进 images/me.jpg</span>
+          </div>
+        </div>
+        <div class="tape tape-a" aria-hidden="true"></div>
+        <div class="tape tape-b" aria-hidden="true"></div>
+        <span class="sticker sticker-a" aria-hidden="true">✏️</span>
+        <span class="sticker sticker-b" aria-hidden="true">🎹</span>
+        <span class="sticker sticker-c" aria-hidden="true">🌷</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>往下看看</span>
+      <span class="arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ---------- 关于我 ---------- -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <p class="kicker">01 · 关于我</p>
+      <h2 id="about-title" class="section-title">一个普通又不普通的小孩</h2>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            我是朵朵，今年 10 岁，在北京读小学四年级。
+            每天早上我最期待的是那杯热牛奶，最不期待的是闹钟。
+          </p>
+          <p>
+            上课的时候我最喜欢语文课，因为可以编故事；数学课只要不算错小数点，我也挺喜欢的。
+            放学后我会去画画，或者坐在钢琴前把一首曲子练到不卡壳为止。
+          </p>
+          <p>
+            我有一个小毛病：看到好看的云、奇怪的石头、掉在地上的羽毛，都想捡回家。
+            妈妈说我的书桌像个小小的自然博物馆。
+          </p>
+        </div>
+
+        <dl class="facts">
+          <div class="fact">
+            <dt>最喜欢的颜色</dt>
+            <dd>柠檬黄 🍋</dd>
+          </div>
+          <div class="fact">
+            <dt>最喜欢的书</dt>
+            <dd>《窗边的小豆豆》</dd>
+          </div>
+          <div class="fact">
+            <dt>最拿手的事</dt>
+            <dd>番茄炒蛋（不放糖那种）</dd>
+          </div>
+          <div class="fact">
+            <dt>长大后想成为</dt>
+            <dd>画绘本的插画师</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 我的爱好 ---------- -->
+  <section class="section section-tint" id="hobbies" aria-labelledby="hobbies-title">
+    <div class="wrap">
+      <p class="kicker">02 · 我的爱好</p>
+      <h2 id="hobbies-title" class="section-title">我用来填满时间的事</h2>
+      <p class="section-sub">一共六件，每一件都能让我忘记看时间。</p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" style="--c: #ffe1d6">🎨</div>
+          <h3>画画</h3>
+          <p>水彩、彩铅、马克笔都试过。最爱画的是花园里那些叫不出名字的小花。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" style="--c: #dfe8ff">🎹</div>
+          <h3>钢琴</h3>
+          <p>练了四年。最近在弹《小步舞曲》，左手还是有点笨，但我每天都练。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" style="--c: #ffeec2">📚</div>
+          <h3>阅读</h3>
+          <p>一年读三十多本。喜欢那种读完之后，还想在窗边坐一会儿的书。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" style="--c: #d5f2e3">🏊</div>
+          <h3>游泳</h3>
+          <p>夏天每周两次。自由泳已经能游完 100 米，仰泳还在喝水的阶段。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" style="--c: #ece2ff">✂️</div>
+          <h3>手工</h3>
+          <p>折纸、黏土、废纸盒改造。我的窗台上有一整排纸做的小动物。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" style="--c: #d9f0fa">🧩</div>
+          <h3>编程积木</h3>
+          <p>用图形化编程让小猫走迷宫。这个网站，是我和爸爸一起搭起来的。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 作品 ---------- -->
+  <section class="section" id="works" aria-labelledby="works-title">
+    <div class="wrap">
+      <p class="kicker">03 · 作品</p>
+      <h2 id="works-title" class="section-title">我做出来的东西</h2>
+      <p class="section-sub">点一下就能放大看。大部分是画，也有几件别的东西。</p>
+
+      <div class="gallery">
+        <figure class="tile tile-tall" style="--tint1:#ffd9c7;--tint2:#ffe9c9" data-title="《春天的花园》· 水彩">
+          <img src="images/work-1.jpg" alt="水彩画《春天的花园》" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">🌷</span>
+          <figcaption>《春天的花园》<small>水彩 · 2026 春</small></figcaption>
+        </figure>
+        <figure class="tile" style="--tint1:#d8ecff;--tint2:#eaf4ff" data-title="《小猫的家》· 彩铅">
+          <img src="images/work-2.jpg" alt="彩铅画《小猫的家》" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">🐱</span>
+          <figcaption>《小猫的家》<small>彩铅 · 2025 冬</small></figcaption>
+        </figure>
+        <figure class="tile" style="--tint1:#e6ddff;--tint2:#f4efff" data-title="钢琴 · 《小步舞曲》">
+          <img src="images/work-3.jpg" alt="弹钢琴的照片" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">🎼</span>
+          <figcaption>《小步舞曲》<small>钢琴 · 2026 春</small></figcaption>
+        </figure>
+        <figure class="tile tile-wide" style="--tint1:#fff0c4;--tint2:#fff8e2" data-title="作文《我的外婆》">
+          <img src="images/work-4.jpg" alt="作文《我的外婆》" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">✍️</span>
+          <figcaption>《我的外婆》<small>作文 · 被贴在教室后墙上</small></figcaption>
+        </figure>
+        <figure class="tile" style="--tint1:#d3f3e6;--tint2:#e9fbf4" data-title="折纸小城堡">
+          <img src="images/work-5.jpg" alt="折纸小城堡" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">🏰</span>
+          <figcaption>纸做的小城堡<small>手工 · 用了 3 个下午</small></figcaption>
+        </figure>
+        <figure class="tile" style="--tint1:#ffdfe8;--tint2:#fff0f4" data-title="我的第一个网页">
+          <img src="images/work-6.jpg" alt="我做的网页截图" onerror="this.remove()" />
+          <span class="tile-emoji" aria-hidden="true">💻</span>
+          <figcaption>我的第一个网页<small>就是你现在看的这个</small></figcaption>
+        </figure>
+      </div>
+
+      <p class="gallery-note">
+        想换成真实的照片：把图片命名为 <code>work-1.jpg</code> … <code>work-6.jpg</code>，放进 <code>images/</code> 文件夹就行。
+      </p>
+    </div>
+  </section>
+
+  <!-- ---------- 成长足迹 ---------- -->
+  <section class="section section-tint" id="journey" aria-labelledby="journey-title">
+    <div class="wrap">
+      <p class="kicker">04 · 成长足迹</p>
+      <h2 id="journey-title" class="section-title">一些我记得的日子</h2>
+
+      <ol class="timeline">
+        <li>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-year">2022</span>
+          <div class="tl-body">
+            <h3>第一次站上台</h3>
+            <p>一年级朗诵比赛，手心全是汗，但还是把整首诗念完了。得了优秀奖。</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-year">2023</span>
+          <div class="tl-body">
+            <h3>学会骑车</h3>
+            <p>在小区里摔了四次，第五次就骑出去一百多米。膝盖上的疤还在。</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-year">2024</span>
+          <div class="tl-body">
+            <h3>钢琴三级</h3>
+            <p>考级那天弹错了一个音，老师说不影响。回家路上买了一支冰淇淋庆祝。</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-year">2025</span>
+          <div class="tl-body">
+            <h3>作文被贴在墙上</h3>
+            <p>写的是外婆的菜园。老师说，细节写得像真的能闻到土的味道。</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-year">2026</span>
+          <div class="tl-body">
+            <h3>做了这个网站</h3>
+            <p>和爸爸花了两个周末。我负责内容和配色，他负责那些看不懂的字母。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ---------- 愿望清单 ---------- -->
+  <section class="section" id="wish" aria-labelledby="wish-title">
+    <div class="wrap">
+      <p class="kicker">05 · 愿望清单</p>
+      <h2 id="wish-title" class="section-title">接下来想做的事</h2>
+      <p class="section-sub">进度条会随着我长大慢慢变满。</p>
+
+      <ul class="wishes">
+        <li class="wish">
+          <div class="wish-head">
+            <span class="wish-name">读完 50 本书</span>
+            <span class="wish-num">32 / 50</span>
+          </div>
+          <div class="bar"><span class="bar-fill" style="--pct:64%"></span></div>
+        </li>
+        <li class="wish">
+          <div class="wish-head">
+            <span class="wish-name">自由泳 100 米</span>
+            <span class="wish-num">完成 ✓</span>
+          </div>
+          <div class="bar"><span class="bar-fill" style="--pct:100%"></span></div>
+        </li>
+        <li class="wish">
+          <div class="wish-head">
+            <span class="wish-name">画满一整本速写本</span>
+            <span class="wish-num">18 / 40 页</span>
+          </div>
+          <div class="bar"><span class="bar-fill" style="--pct:45%"></span></div>
+        </li>
+        <li class="wish">
+          <div class="wish-head">
+            <span class="wish-name">去看一次海</span>
+            <span class="wish-num">还没去</span>
+          </div>
+          <div class="bar"><span class="bar-fill" style="--pct:6%"></span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------- 留言 ---------- -->
+  <section class="section section-tint" id="hello" aria-labelledby="hello-title">
+    <div class="wrap hello-wrap">
+      <div>
+        <p class="kicker">06 · 打个招呼</p>
+        <h2 id="hello-title" class="section-title">有什么想对我说的吗？</h2>
+        <p class="section-sub">
+          如果文章、画或者哪句话让你想起什么，欢迎写信给我。
+          每一封我都会认真读。
+        </p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="mailto:hello@example.com?subject=%E7%BB%99%E6%9C%B5%E6%9C%B5%E7%9A%84%E4%BF%A1">
+        给我写封信 ✉️
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand"><span class="brand-dot" aria-hidden="true"></span> 朵朵的小小世界</p>
+    <p class="footer-note">用 HTML 和一点点勇气做的 · <span id="year">2026</span></p>
+  </div>
+</footer>
+
+<!-- 放大查看 -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="作品预览">
+    <button class="lightbox-close" id="lightbox-close" aria-label="关闭">×</button>
+    <div class="lightbox-stage" id="lightbox-stage"></div>
+    <p class="lightbox-cap" id="lightbox-cap"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
