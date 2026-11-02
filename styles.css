@@ -156,7 +156,7 @@ code {
   position: absolute;
   border-radius: 50%;
   filter: blur(60px);
-  opacity: .55;
+  opacity: .45;
   pointer-events: none;
 }
 .blob-a { width: 470px; height: 470px; background: var(--peach); top: -170px; right: -90px; }
@@ -360,6 +360,18 @@ h1 {
   50% { transform: translateY(-11px) rotate(6deg); }
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 190px;
+  background: linear-gradient(to bottom, rgba(255, 248, 240, 0), var(--cream) 85%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .scroll-hint {
   position: relative;
   z-index: 2;
@@ -501,14 +513,14 @@ h1 {
 /* ---------------- 作品画廊 ---------------- */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 172px;
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .tile {
   position: relative;
   margin: 0;
+  aspect-ratio: 4 / 3;
   border-radius: 18px;
   overflow: hidden;
   background: linear-gradient(150deg, var(--tint1, #ffe9d6), var(--tint2, #fff6ee));
@@ -521,8 +533,8 @@ h1 {
 .tile:hover { transform: translateY(-4px) scale(1.012); box-shadow: var(--shadow-md); }
 .tile:focus-visible { outline-offset: 4px; }
 
-.tile-tall { grid-row: span 2; }
-.tile-wide { grid-column: span 2; }
+/* 统一格子尺寸后，跨行跨列的修饰类不再需要，保留以防旧 HTML */
+.tile-tall, .tile-wide { grid-row: auto; grid-column: auto; }
 
 .tile img {
   position: absolute;
@@ -774,7 +786,7 @@ h1 {
   .sticker-b { right: 0; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .cards { grid-template-columns: repeat(2, 1fr); }
-  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 156px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 14px; }
 }
 
 @media (max-width: 640px) {
@@ -793,9 +805,7 @@ h1 {
   .section { padding: 66px 18px; }
   .scroll-hint { margin-top: 40px; }
   .cards { grid-template-columns: 1fr; }
-  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 138px; gap: 12px; }
-  .tile-wide { grid-column: span 2; }
-  .tile-tall { grid-row: span 2; }
+  .gallery { grid-template-columns: 1fr 1fr; gap: 12px; }
   .tile-emoji { font-size: 34px; }
   .tile figcaption { padding: 18px 11px 10px; font-size: 13px; }
   .tile figcaption small { font-size: 11px; }
